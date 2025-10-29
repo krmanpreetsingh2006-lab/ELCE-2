@@ -1,143 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Website Homepage</title>
+    <title>Global Daily News</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
 
-        /* Navigation Bar */
-        nav {
-            background-color: #333;
+        header {
+            background-color: #222;
+            color: white;
             padding: 15px;
+            text-align: center;
         }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
         }
 
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
+        nav a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            margin: 10px;
+            font-weight: bold;
         }
 
-        nav ul li a:hover {
-            color: #ddd;
+        nav a:hover {
+            text-decoration: underline;
         }
 
-        /* Main Section */
-        .main-content {
-            max-width: 800px;
-            margin: 20px auto;
+        section {
             padding: 20px;
         }
 
-        .article img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 15px;
+        h2 {
+            color: #333;
         }
 
-        .article h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
+        img {
+            width: 400px;
+            border-radius: 10px;
         }
 
-        .article p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: #ddd;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            color: white;
+        iframe {
+            width: 400px;
+            height: 250px;
+            border: none;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Global Daily News</h1>
+        <p>Your Trusted Source for Latest Updates</p>
+    </header>
+
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">World</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <a href="https://www.fastX.com/news" target="_blank">World</a>
+        <a href="https://edition.cnn.com/" target="_blank">Sports</a>
+        <a href="https://www.reuters.com/entertainment/" target="_blank">Entertainment</a>
+        <a href="#">Podcast</a>
+        <a href="#">Contact</a>
     </nav>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="article">
-            <h1>Breaking News: Global Tech Conference Highlights AI Innovations</h1>
-            <img src="https://via.placeholder.com/800x400" alt="Tech Conference">
-            <p>
-                The annual Global Tech Conference showcased groundbreaking advancements in artificial intelligence, with leading experts discussing the future of AI in healthcare, education, and more. The event drew thousands of attendees from around the world.
-            </p>
-        </div>
+    <!-- Main News Section -->
+    <section>
+        <h2>World News</h2>
+        <p>Today’s top headline: Global leaders meet to discuss climate change initiatives.</p>
+        
+        <!-- News Image -->
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/news-channel-logo-design-template-e8a5e78f0d53419cf994ccd5f687b596_screen.jpg?ts=1737807674" alt="News Image">
 
         <!-- Embedded YouTube Video -->
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    frameborder="0" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-    </div>
+        <h3>Sports Highlights</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gjvOfgTz6cc?si=R2izY8NG1_906iMK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <!-- Footer -->
-    <footer>
-        <p>Contact us: news@example.com | Follow us: 
-            <a href="#">Twitter</a> 
-            <a href="#">Facebook</a> 
-            <a href="#">Instagram</a>
-        </p>
-    </footer>
+       <hr>
+       <!-- Entertainment Section -->
+<h2 id="entertainment">Entertainment Buzz</h2>
+<p>New movie trailer released today. Fans are excited!</p>
+<!-- Local Video -->
+<video width="560" height="315" controls>
+<source src="sample-video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+    <hr>
+<!-- Podcast Section -->
+<h2 id="podcast">News Podcast</h2>
+<p>Listen to today’s top headlines:</p>
+<!-- Audio -->
+<audio controls>
+<source src="sample-audio.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<hr>
+<!-- Footer -->
+<h3 id="contact">Contact Us</h3>
+<p>Email: info@globalnews.com</p>
+<p>&copy; 2025 Global Daily News</p>
 </body>
 </html>
