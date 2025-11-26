@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Ticket Booking</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f8ff; 
+            margin: 0;                 
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none; 
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #00ccff;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #007bff22;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e0115;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #04203d; 
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Easy Ticket Booking</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Events</a>
+        <a href="#">Travel</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2>Book Your Tickets</h2>
+
+            <form action="#" method="POST">
+
+                <label for="category">Choose Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="cinema">Cinema (Movies)</option>
+                    <option value="event">Event (Concert/Sports)</option>
+                    <option value="travel">Travel (Bus/Train)</option>
+                </select>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+
+                <button type="submit">Book Tickets Now</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 Easy Ticket Booking. All rights reserved.
+    </footer>
+
+</body>
+</html>
