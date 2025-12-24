@@ -6,6 +6,45 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "main main sidebar"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .box1 {
+            grid-area: header;
+            background-color: rgb(195, 157, 184);
+            padding: 20px;
+            text-align: center;
+        }
+        .box2 {
+            grid-area: main;
+            background-color: rgb(196, 147, 178);
+            padding: 20px;
+            text-align: center;
+        }
+        .box3 {
+            grid-area: footer;
+            background-color: rgb(141, 105, 105);
+            padding: 20px;
+            text-align: center;
+        }
+        .box4 {
+            grid-area: sidebar;
+            background-color: rgb(178, 178, 128);
+            padding: 20px;
+            text-align: center;
+        }
+        .box1, .box2, .box3, .box4 {
+            border: 2px solid black;
+        }
+    </style>
+    
     <div class ="container" >
         <div class="box1" > Header </div>
         <div class="box2" > Main Content </div>
